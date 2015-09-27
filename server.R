@@ -31,7 +31,6 @@ shinyServer(function(input, output) {
 		type      = input$chart_type,
 		subset    = paste(input$daterange, collapse = "::"),
     TA=myta,
-    log.scale = input$log_y,
 		theme     = "white")
 
 		if(input$bbands){addBBands()}
